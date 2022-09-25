@@ -1,0 +1,22 @@
+.timer {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.timer__item {
+  flex: 0 0 80px;
+  text-align: center;
+}
+
+.timer__unit {
+  font-weight: 600;
+  font-size: 26px;
+  color: #FFFFFF;
+  background-color: #A3B6C7;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+
+.timer__unit-decription {}
