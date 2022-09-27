@@ -1,5 +1,5 @@
 .banner {
-  padding: 24px 0 206px;
+  padding: 24px 0;
   background: #F5F5F7;
   margin-bottom: 40px;
   text-align: center;
@@ -88,5 +88,12 @@
 @media (min-width:1024px) {
   .banner__image {
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1440px) {
+  .banner__image {
+    width: 465px;
+    ;
   }
 }
