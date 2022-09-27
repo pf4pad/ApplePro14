@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="img/favicon.png" type="image/png">
+  <!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
   <link rel="stylesheet" href="lib/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="lib/swiper-bundle.esm.browser.min.js" type="module"></script>
   <script src="scripts/index.js" type="module"></script>
+  <script src="scripts/timer.js" type="module"></script>
   <title>Apple Pro 14</title>
 </head>
 
@@ -61,16 +62,19 @@
           </h2>
           <ul class="banner__timer timer">
             <li class="timer__item">
-              <p class="timer__unit">364</p>
-              <p class="timer__unit-decription">дня</p>
+              <p class="timer__unit timer__unit_day">364</p>
+              <p class="timer__unit-decription timer__unit-decription_day">дня</p>
             </li>
             <li class="timer__item">
-              <p class="timer__unit">23</p>
-              <p class="timer__unit-decription">часа</p>
+              <p class="timer__unit timer__unit_hour">23</p>
+              <p class="timer__unit-decription timer__unit-decription_hour">часа</p>
             </li>
             <li class="timer__item">
-              <p class="timer__unit">45</p>
-              <p class="timer__unit-decription">минут</p>
+              <p class="timer__unit timer__unit_min">45</p>
+              <p class="timer__unit-decription timer__unit-decription_min">минут</p>
+            <li class="timer__item">
+              <p class="timer__unit timer__unit_sec">45</p>
+              <p class="timer__unit-decription timer__unit-decription_sec">секунд</p>
             </li>
           </ul>
 
