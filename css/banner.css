@@ -1,8 +1,11 @@
 .banner {
-  padding: 24px 0;
   background: #F5F5F7;
   margin-bottom: 40px;
   text-align: center;
+}
+
+.banner__container {
+  padding-top: 24px;
 }
 
 .banner__content {
@@ -46,6 +49,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 0;
   }
 
 
@@ -58,10 +62,19 @@
 @media (min-width:900px) {
   .banner__image {
     width: 310px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width:1024px) {
+  .banner {
+    margin-bottom: 70px;
+  }
+
+  .banner__container {
+    padding-top: 24px;
+  }
+
   .banner__title {
     font-size: 20px;
   }
