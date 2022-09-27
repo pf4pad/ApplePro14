@@ -19,4 +19,26 @@
   margin-bottom: 4px;
 }
 
-.timer__unit-decription {}
+.timer__unit-decription {
+  font-weight: 300;
+}
+
+@media (min-width:1024px) {
+  .timer {
+    gap: 8px;
+  }
+
+  .timer__item {
+    flex-basis: 120px;
+  }
+
+  .timer__unit {
+    font-size: 40px;
+    padding: 11px;
+    margin-bottom: 8px;
+  }
+
+  .timer__unit-decription {
+    font-size: 20px;
+  }
+}

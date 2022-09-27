@@ -26,7 +26,10 @@
   margin-bottom: 36px;
 }
 
-
+.banner__image {
+  width: 145px;
+  margin: 0 auto;
+}
 
 .bunner__button {
   padding: 16px 20px;
@@ -37,7 +40,6 @@
   line-height: 100%;
 }
 
-
 @media (min-width:768px) {
   .banner__container {
     display: flex;
@@ -46,6 +48,44 @@
     flex-wrap: wrap;
   }
 
+
+  .banner__image {
+    margin-right: 0;
+    width: 200px;
+  }
+}
+
+@media (min-width:900px) {
+  .banner__image {
+    width: 310px;
+  }
+}
+
+@media (min-width:1024px) {
+  .banner__title {
+    font-size: 20px;
+  }
+
+  .banner__subtitle {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .banner__timer {
+    margin-bottom: 56px;
+  }
+
+  .banner__image {
+    width: 310px;
+  }
+
+  .banner__content {
+    max-width: 510px;
+  }
+}
+
+@media (min-width:1024px) {
   .banner__image {
     margin: 0 auto;
   }
