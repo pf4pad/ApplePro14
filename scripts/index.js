@@ -1,4 +1,4 @@
-
+// slider
 import Swiper from '../lib/swiper-bundle.esm.browser.min.js'
 new Swiper('.goods__block', {
   slidesPerView: 1,
@@ -25,5 +25,25 @@ new Swiper('.goods__block', {
   navigation: {
     prevEl: '.goods__arrow_prev',
     nextEl: '.goods__arrow_next',
+  },
+  preventClicks: true,
+  a11y: false,
+})
+
+// modal
+
+const productMore = document.querySelectorAll('.product__more')
+
+const modal = document.querySelector('.modal')
+
+
+productMore.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    modal.classList.add('modal_open')
+  })
+})
+modal.addEventListener('click', (e) => {
+  if (e.target) {
+    modal.classList.remove('modal_open')
   }
 })
