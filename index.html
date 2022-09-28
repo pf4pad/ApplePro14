@@ -8,9 +8,11 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
   <link rel="stylesheet" href="lib/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="lib/simplebar.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="lib/swiper-bundle.esm.browser.min.js" type="module"></script>
+  <script src="lib/simplebar.min.js" defer></script>
   <script src="scripts/index.js" type="module"></script>
   <script src="scripts/timer.js" type="module"></script>
   <title>Apple Pro 14</title>
@@ -37,16 +39,26 @@
       <div class="header__country country">
         <button class="country__btn">Страна</button>
       </div>
-      <ul class="country__list">
-        <li class="country__item"><button class="country__btn">Russia, RUB</button>
-        </li>
-        <li class="country__item"><button class="country__btn">USA, USD</button>
-        </li>
-        <li class="country__item"><button class="country__btn">Germany, EURO</button>
-        </li>
-        <li class="country__item"><button class="country__btn">Great Britain, GBP</button>
-        </li>
-      </ul>
+
+      <div class="country__wrapper">
+        <ul class="country__list ">
+          <li class="country__item"><button class="country__choise" data-currency="RUB">Russia, RUB</button>
+          </li>
+          <li class="country__item"><button class="country__choise" data-currency="USD">USA, USD</button>
+          </li>
+          <li class="country__item"><button class="country__choise" data-currency="EURO">Germany, EURO</button>
+          </li>
+          <li class="country__item">
+            <button class="country__choise" data-currency="GBP">Great Britain, GBP</button>
+          </li>
+          <li class="country__item"><button class="country__choise" data-currency="UAH">Ukraine, UAH</button>
+          </li>
+          <li class="country__item"><button class="country__choise" data-currency="AUD">Australia, AUD</button>
+          </li>
+          <li class="country__item">
+            <button class="country__choise" data-currency="EUR">France, EUR</button>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -226,11 +238,11 @@
       </h2>
       <form class="modal__form form">
         <label class="form__label">
-          <span class="form__placehoder">Ваше имя</span>
+          <span class="form__placeholder">Ваше имя</span>
           <input type="text" class="form__input">
         </label>
         <label class="form__label">
-          <span class="form__placehoder">Телефон</span>
+          <span class="form__placeholder">Телефон</span>
           <input type="text" class="form__input">
         </label>
         <button class="form__submit" type="submit">Заказать консультацию</button>

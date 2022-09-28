@@ -10,6 +10,7 @@
 .modal_open {
   display: flex;
   background: #ccc;
+  opacity: 0.95;
 }
 
 .modal__wrapper {
