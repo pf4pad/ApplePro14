@@ -41,7 +41,7 @@ const timer = (deadline) => {
     descriptionSec.textContent = declOfNum(timer.seconds, ['сек.', 'сек.', 'сек.'])
 
     const timerId = setTimeout(start, 1000);
-    console.log(timer.timeRemaning);
+    // console.log(timer.timeRemaning);
     if (timer.timeRemaning < 0) {
       clearTimeout(timerId);
       unitDay.textContent = '0';

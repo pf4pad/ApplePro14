@@ -15,6 +15,9 @@
   background: url('../img/arrow-down.svg') no-repeat center;
 }
 
+.country {
+  position: relative;
+}
 
 .country__wrapper {
   display: none;
@@ -34,11 +37,11 @@
 }
 
 .country__list {
-  max-height: 98px;
+  max-height: 102px;
 }
 
 .country__item {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .country__item:last-child {
@@ -62,14 +65,13 @@
   top: 0;
   right: 0;
   bottom: 0;
-  : 0;
   overflow: hidden;
   width: 4px;
 }
 
 @media (min-width: 1024px) {
   .country__list {
-    max-height: 106px;
+    max-height: 120px;
   }
 
   .country__choise {
